@@ -1,0 +1,18 @@
+ll_node.o: data_structures/ll_node.cpp data_structures/ll_node.h
+partially_filled_array.o: data_structures/partially_filled_array.cpp \
+ data_structures/partially_filled_array.h
+linked_list.o: data_structures/linked_list.cpp \
+ data_structures/linked_list.h data_structures/ll_node.h
+dynamic_array.o: data_structures/dynamic_array.cpp \
+ data_structures/dynamic_array.h data_structures/partially_filled_array.h
+queue_da.o: queue_da.cpp queue_da.h data_structures/dynamic_array.h \
+ data_structures/partially_filled_array.h
+queue_ll.o: queue_ll.cpp queue_ll.h data_structures/linked_list.h \
+ data_structures/ll_node.h
+stack_da.o: stack_da.cpp stack_da.h data_structures/dynamic_array.h \
+ data_structures/partially_filled_array.h
+stack_ll.o: stack_ll.cpp stack_ll.h data_structures/linked_list.h \
+ data_structures/ll_node.h
+main.o: main.cpp stack_ll.h data_structures/linked_list.h \
+ data_structures/ll_node.h stack_da.h data_structures/dynamic_array.h \
+ data_structures/partially_filled_array.h queue_ll.h queue_da.h Timer.h
